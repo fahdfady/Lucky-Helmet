@@ -243,23 +243,26 @@ ul li a:hover {
     height: 52px;
 }
 
-.login-form-1 {
+.login-form-2 {
     padding: 5%;
     /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.login-form-1 h3 {
+.login-container h3 {
     text-align: center;
+}
+
+.login-form-1 h3 {
     color: #333;
 }
 
-.login-form-2 {
+.login-form-1 {
     padding: 5%;
     background: #a662bc;
     /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.login-form-2 h3 {
+.login-form-1 h3 {
     text-align: center;
     color: #fff;
 }
@@ -277,25 +280,25 @@ ul li a:hover {
     outline: none;
 }
 
-.login-form-1 .btnSubmit {
+.login-form-2 .btnSubmit {
     font-weight: 600;
     color: #fff;
     background-color: #a662bc;
 }
 
-.login-form-2 .btnSubmit {
+.login-form-1 .btnSubmit {
     font-weight: 600;
     color: #a662bc;
     background-color: #fff;
 }
 
-.login-form-2 .ForgetPwd {
+.login-form-1 .ForgetPwd {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
 }
 
-.login-form-1 .ForgetPwd {
+.login-form-2 .ForgetPwd {
     color: #a662bc;
     font-weight: 600;
     text-decoration: none;
@@ -319,7 +322,7 @@ ul li a:hover {
 .checkbox label {
     position: relative;
     padding-left: 26px;
-    color: #fff;
+    color: #a662bc;
     margin-bottom: 0;
     font-weight: 600;
     font-size: inherit;
@@ -333,7 +336,7 @@ ul li a:hover {
     width: 19px;
     height: 18px;
     border: 1px solid;
-    border-color: #fff;
+    border-color: #a662bc;
     border-radius: 2px;
     background-color: transparent;
 }
@@ -342,12 +345,12 @@ ul li a:hover {
     position: absolute;
     padding-left: 3px;
     font-size: 10px;
-    color: #fff;
+    color: #a662bc;
 }
 
 .checkbox input:checked+label::before {
-    border-color: #fff;
-    background: #fff;
+    border-color: #a662bc;
+    background: #a662bc;
     transition: .3s all ease-in-out;
 }
 
@@ -355,14 +358,14 @@ ul li a:hover {
     font-family: 'Font Awesome 5 Free';
     content: "\f00c";
     font-weight: 900;
-    color: #a662bc;
+    color: #fff;
     left: 2.6px;
     top: 4.7px;
     transition: .2s all ease-in-out;
 }
 
 .checkbox input:checked+label {
-    color: #fff;
+    color: #a662bc;
     transition: .3s all ease-in-out;
 }
 
