@@ -25,7 +25,7 @@ function smoothScroll(target, duration) {
     }
     requestAnimationFrame(animation);
 }
-var scrollButton = document.querySelector('.mouseScroll .btn');
+var scrollButton = document.querySelector('.mouseScroll .botn');
 
 scrollButton.addEventListener('click', function () {
     smoothScroll('.page-body', 800);

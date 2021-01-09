@@ -45,6 +45,7 @@ body {
     background: -ms-radial-gradient(center, ellipse cover, rgb(206 198 216) 0%, rgb(255 255 255) 100%);
     background: radial-gradient(ellipse at center, rgb(206 198 216) 0%, rgb(255 255 255) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a27bcc', endColorstr='#6c5299', GradientType=1);
+    font-family: "Tajawal", sans-serif;
 }
 
 
@@ -53,6 +54,10 @@ body {
 
 /* nav START */
 
+.page-header {
+    padding-bottom: 60px;
+}
+
 .page-header nav {
     width: 100%;
     background: #4f2f7fa3 !important;
@@ -60,6 +65,7 @@ body {
     z-index: 999999999;
     padding: 2px 20px;
     flex-wrap: nowrap;
+    direction: ltr;
 }
 
 
@@ -113,6 +119,7 @@ ul li a:hover {
 .rightSide .button {
     background: #a662bc;
     margin-left: 10px;
+    width: 200px;
 }
 
 
@@ -174,7 +181,7 @@ ul li a:hover {
     text-shadow: 4px 2px 2px #1a043abf;
 }
 
-.mouseScroll .btn {
+.mouseScroll .botn {
     height: 50px;
     width: 30px;
     border: 2px solid #eae5d7;
@@ -185,8 +192,8 @@ ul li a:hover {
     user-select: none;
 }
 
-.mouseScroll .btn::before,
-.mouseScroll .btn::after {
+.mouseScroll .botn::before,
+.mouseScroll .botn::after {
     content: "";
     position: absolute;
     top: 20%;
@@ -200,7 +207,7 @@ ul li a:hover {
     animation: scroll-down 1s ease-in-out infinite;
 }
 
-.mouseScroll .btn::before {
+.mouseScroll .botn::before {
     top: 30%;
     animation-delay: 0.3s;
     /* animation: scroll-down 1s ease-in-out infinite; */
@@ -208,6 +215,93 @@ ul li a:hover {
 
 .page-body {
     /* padding: 10px; */
+}
+
+.page-body .nav {
+    justify-content: center;
+}
+
+a.nav-link i {
+    font-size: 4em;
+    padding: 0px 28px;
+    color: #651f7b;
+}
+
+svg.bd-placeholder-img.card-img-top {
+    height: 280px;
+}
+
+.row>* {
+    text-align: right;
+}
+
+.choose {
+    align-items: baseline;
+    text-align: right;
+}
+
+.choose h1 {
+    width: 100%;
+    padding: 40px 0px;
+    text-transform: uppercase;
+    /* letter-spacing: 5px; */
+    text-align: center;
+}
+
+.reason {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.reason h3 {
+    font-size: 22px;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+}
+
+.iconRoundWrap {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.iconRound {
+    width: 80px;
+    height: 80px;
+    background: #d169f2;
+    color: #651f7b;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: #00000040 1px 5px 12px 0px;
+}
+
+.iconRound:before {
+    content: " ";
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px dotted #671582;
+    border-radius: 100%;
+}
+
+.iconRound i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.description p {
+    font-size: 14px;
+    color: #777;
 }
 
 
@@ -379,8 +473,63 @@ ul li a:hover {
     justify-content: space-between;
 }
 
+.check {
+    justify-content: flex-end;
+}
+
+.login-form-1 .checkbox {
+    font-family: 'tajwal', sans-serif;
+}
+
+.login-form-1 .checkbox label {
+    font-size: 16px;
+}
+
+.login-form-1 .checkbox,
+.login-form-1 .checkbox input:checked+label,
+.login-form-1 .checkbox label::before,
+.login-form-1 .checkbox label:after,
+.login-form-1 .checkbox label {
+    color: #fff;
+    border-color: #fff;
+}
+
+.login-form-1 .checkbox input:checked+label::before {
+    border-color: #fff;
+    background: #fff;
+    transition: .3s all ease-in-out;
+}
+
+.login-form-1 .checkbox input:checked+label:after {
+    color: #a662bc;
+}
+
+.checkbox label a {
+    color: #593196;
+}
+
 
 /* Login END */
+
+
+/* Checkout START */
+
+body#checkout {
+    font-family: 'tajawal', sans-serif;
+}
+
+.py-5 {
+    padding-top: 105px !important;
+    padding-bottom: 3rem!important;
+}
+
+.list-group-item,
+.list-group-item:hover {
+    color: #000;
+}
+
+
+/* Checkout END */
 
 
 /* animations START */
