@@ -55,13 +55,8 @@
         }
         
         .page-header nav {
-            width: 100%;
             background: #4f2f7fa3 !important;
-            position: fixed;
-            z-index: 999999999;
-            padding: 2px 20px;
-            flex-wrap: nowrap;
-            direction: ltr;
+            direction: rtl;
         }
         /* nav .logo,
 nav .links,
@@ -79,15 +74,6 @@ nav .rightSide {
             border-style: none;
         }
         
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            user-select: none;
-            /* margin-left: 100px; */
-            color: #c6caa7;
-        }
-        
         nav ul li {
             padding: 0px 50px;
         }
@@ -96,7 +82,6 @@ nav .rightSide {
             font-size: 21px;
             padding: 0px !important;
             color: #f5f1d2ee !important;
-            font-family: 'Kelly slab', sans-serif;
         }
         
         ul li a:hover {
@@ -113,6 +98,8 @@ nav .rightSide {
             margin-left: 10px;
             width: 200px;
         }
+        
+        */
         /* .button.licence {
     width: 59%;
 } */
@@ -558,15 +545,39 @@ nav .rightSide {
         /* animations END */
         /* Responsive START */
         
-        @media(max-width:) {
-            a.nav-link {
-                font-size: 13px;
+        @media (max-width:800px) {
+            a.nav-link i {
+                font-size: 1.7em;
             }
         }
         
-        @media (max-width:800px) {
-            a.nav-link i {
-                font-size: 3em;
+        @media (max-width:768px) {
+            .card {
+                height: 430px;
+            }
+            .card img {
+                width: 100%;
+                height: 183px;
+            }
+            .card-body {
+                min-height: 300px;
+            }
+            .cardcontainer {
+                min-height: 191px;
+            }
+            .card-title {
+                margin-bottom: .5rem;
+                font-size: 16px;
+            }
+            .card-text:last-child {
+                margin-bottom: 0;
+                font-size: 12px;
+            }
+            .card .btn {
+                font-size: 10px;
+            }
+            .col-6.col-md-4.col-lg-3 {
+                padding: 5px;
             }
         }
         
@@ -579,9 +590,9 @@ nav .rightSide {
             }
         }
         
-        @media (max-width: 800px) {
-            a.nav-link i {
-                font-size: 1.7em;
+        @media(max-width:425px) {
+            a.nav-link {
+                font-size: 14px;
             }
         }
         /* Responsive END */
