@@ -115,6 +115,13 @@
 
                         </a>
                     </div>
+                    <div class="container">
+                        <div class="mb-3 price-filter">
+                            <label for="customRange3" class="form-label">100 EGP</label>
+                            <label for="customRange3" class="form-label">500 EGP</label>
+                            <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                        </div>
+                    </div>
                 </nav>
 
                 <div class="tab-content" id="nav-tabContent">
@@ -541,30 +548,34 @@
 
                 </div>
             </div>
-            <!-- Load Facebook SDK for JavaScript -->
-            <div id="fb-root"></div>
-            <script>
-                window.fbAsyncInit = function () {
-                    FB.init({
-                        xfbml: true,
-                        version: 'v6.0'
-                    });
-                };
-
-                (function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-
-            <!-- Your customer chat code -->
-            <div class="fb-customerchat" attribution=setup_tool page_id="100327018107849">
-            </div>
         </div>
 
+        <footer class="page-footer my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; lucky helmet 2021</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">خصوصية</a></li>
+                <li class="list-inline-item"><a href="#">شروط</a></li>
+                <li class="list-inline-item"><a href="#">الدعم</a></li>
+            </ul>
+            <ul class="social0media">
 
+                <li class="list-inline-item"><a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+
+                <li class="list-inline-item"><a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+
+                <li class="list-inline-item"><a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </footer>
     </div>
 
     <!-- Jquery -->
