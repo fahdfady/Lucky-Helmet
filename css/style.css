@@ -91,6 +91,12 @@
             color: #f5f1d2ee !important;
         }
         
+        .page-header nav a.nav-link i {
+            font-size: 20px;
+            padding: 0px;
+            padding-left: 5px;
+        }
+        
         ul li a:hover {
             color: #e37fdcee;
             transition: .3s all ease-in-out;
