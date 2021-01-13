@@ -48,54 +48,48 @@
 </head>
 
 <body class="bg-light" id="checkout">
-    
+
     <div class="page-container">
         <div class="page-header">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-                <div class="">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
                     <a class="navbar-brand logo" href="index.html">
                         <img src="img/Logo.png" alt="Logo">
                     </a>
-                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mb-2 mb-md-0">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                            </li>
 
-                <div class="collapse navbar-collapse ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">اعرف المزيد عنّا</a>
+                            </li>
 
-                    <ul class="navbar-nav mr-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#0">
-                                عنّا
-                            </a>
-                        </li>
-                        |
-                        <li class="nav-item">
-                            <a class="nav-link" href="#0">
-                                تواصل معنا
-                            </a>
-                        </li>
-                        |
-                        <li class="nav-item ">
-                            <a class="nav-link" href="index.html">
-                                الرئيسية
-                            </a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تواصل</a>
+                            </li>
 
-                    <div class="form-inline  rightSide">
-                        <a href="login.html" class="Login button">
-                            تسجيل الدخول - تسجيل
-                        </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الشروط والأحكام</a>
+                            </li>
 
-                        <a href="#0" class="licence button">
-                            الشروط والأحكام
-                        </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">تسجيل الدخول - تسجيل</a>
+                            </li>
+                        </ul>
                     </div>
-
+                    <a href="checkout.html" class="cart iconRound">
+                        <span class="badge bg-secondary rounded-pill">3</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
                 </div>
             </nav>
 
@@ -106,10 +100,16 @@
                     <img class="d-block mx-auto mb-4" src="img/Logo.png" alt="">
                     <h2> تأكيد الدفع</h2>
                     <p class="lead">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus eligendi iure sunt quaerat
-                        inventore voluptatum itaque ducimus nam provident totam sint labore explicabo aliquid, in
-                        delectus
-                        aut qui? Voluptatum, earum.
+                        يرجى قراءة
+                        <a href="licence">
+                            الشروط والأحكام
+                        </a>
+                        الخاصة بالموقع قبل شراء أي منتج من الموقع.
+                        <br>
+                        إكمالك في هذه الصفحة يعني بأنك قمت بقراءة
+                        <a href="licence">
+                            الشروط والأحكام
+                        </a>
                     </p>
                 </div>
 
@@ -264,13 +264,6 @@
                             <hr class="my-4">
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="same-address">
-                                <label class="form-check-label" for="same-address">عنوان الشحن هو نفس عنوان الفاتورة
-                                    الخاص
-                                    بي</label>
-                            </div>
-
-                            <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="save-info">
                                 <label class="form-check-label" for="save-info">احفظ هذه المعلومات في المرة
                                     القادمة</label>
@@ -351,9 +344,11 @@
         </div>
     </div>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
 
-    <script src="../checkout/form-validation.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

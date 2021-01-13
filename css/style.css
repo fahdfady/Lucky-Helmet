@@ -57,16 +57,13 @@
         .page-header nav {
             background: #4f2f7fa3 !important;
             direction: rtl;
+            transition: .2s all ease-in-out;
         }
-        /* nav .logo,
-nav .links,
-nav .rightSide {
-    width: 32%;
-    display: flex;
-} */
-        /* nav .logo {
-    justify-content: left !important;
-} */
+        
+        .page-header nav.scrolled {
+            background: #673da6 !important;
+            transition: .27s all ease-in-out
+        }
         
         nav .logo img {
             width: 65px;
@@ -74,8 +71,18 @@ nav .rightSide {
             border-style: none;
         }
         
+        nav ul {
+            margin-right: 0px !important;
+            margin-left: auto !important;
+        }
+        
         nav ul li {
-            padding: 0px 50px;
+            padding: 0px 29px;
+            border-left: 2px solid #d5bce0;
+        }
+        
+        nav ul li.nav-item:last-of-type {
+            border: none;
         }
         
         nav ul li a {
@@ -89,24 +96,25 @@ nav .rightSide {
             transition: .3s all ease-in-out;
         }
         
-        .rightSide {
-            justify-content: center;
+        a.cart.iconRound {
+            width: 50px;
+            height: 50px;
+            font-size: 11px;
         }
         
-        .rightSide .button {
-            background: #a662bc;
-            margin-left: 10px;
-            width: 200px;
+        a.cart.iconRound:before {
+            display: none;
         }
         
-        */
-        /* .button.licence {
-    width: 59%;
-} */
-        
-        .rightSide .button:hover {
-            color: #000 !important;
-            background: #e7dde7;
+        a.cart.iconRound:hover {
+            color: #a50ed7;
+            transition: .2s all ease-in-out;
+        }
+        .badge{
+            background: #8f38aa !important;
+        }
+        .cart .badge {
+            font-size: .85em;
         }
         /* nav END */
         /* Body START */
@@ -545,13 +553,19 @@ nav .rightSide {
         /* animations END */
         /* Responsive START */
         
-        @media (max-width:800px) {
+        @media (max-width:1100px) {
             a.nav-link i {
                 font-size: 1.7em;
+            }
+            a.nav-link {
+                font-size: 14px;
             }
         }
         
         @media (max-width:768px) {
+            nav ul li {
+                border: none;
+            }
             .card {
                 height: 430px;
             }
@@ -579,6 +593,12 @@ nav .rightSide {
             .col-6.col-md-4.col-lg-3 {
                 padding: 5px;
             }
+            a.cart.iconRound {
+                width: 50px;
+                height: 50px;
+                font-size: 11px;
+                order: -4;
+            }
         }
         
         @media (max-width:500px) {
@@ -587,6 +607,9 @@ nav .rightSide {
             }
             .layer h3 {
                 font-size: 18;
+            }
+            nav ul li {
+                padding: 15px 20px;
             }
         }
         

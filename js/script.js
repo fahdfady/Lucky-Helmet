@@ -26,9 +26,30 @@ function smoothScroll(target, duration) {
     requestAnimationFrame(animation);
 }
 var scrollButton = document.querySelector('.mouseScroll .botn');
+if (scrollButton === null) {
+    return;
+}
+else {
+    scrollButton.addEventListener('click', function () {
+        smoothScroll('.page-body', 800);
+    });
+}   
 
-scrollButton.addEventListener('click', function () {
-    smoothScroll('.page-body', 800);
+// .page-header nav {
+// background: #673da6 !important;
+// direction: rtl;
+// }
+
+// $(function () {
+//     $(document).scroll(function () {
+//         var $nav = $(".page-header nav");
+//         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+//     });
+// });
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".page-header nav");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
 });
-
-
